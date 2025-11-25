@@ -1,0 +1,22 @@
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #eaeaea;
+  padding: 1.5rem 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+}
+
+.bottom {
+  margin-top: 1rem;
+}

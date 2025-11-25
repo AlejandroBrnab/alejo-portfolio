@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ProjectsSection from './components/ProjectsSection';
+import HeroSection from './components/HeroSection';
+// import { Container, Title, Text, Flex } from '@mantine/core';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => (
+  <div>
+    <Header />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <HeroSection />
 
-export default App
+    <ProjectsSection />
+
+    {/* Contact Section */}
+    {/* <Container id="contact" py="xl" style={{ textAlign: 'center', backgroundColor: '#f5f5f5' }}>
+      <Title order={2} mb="md">Contact</Title>
+      <Text>Email: your.email@example.com</Text>
+      <Text mt="sm">Feel free to reach out!</Text>
+    </Container> */}
+
+    <Footer />
+  </div>
+);
+
+export default App;

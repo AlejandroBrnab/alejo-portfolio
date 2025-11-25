@@ -1,0 +1,31 @@
+.card {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  cursor: pointer;
+  background-color: var(--mantine-color-body);
+}
+
+/* Hover animation */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--mantine-shadow-md);
+}
+
+/* Title styling */
+.title {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Footer section */
+.footer {
+  border-top: 1px solid var(--mantine-color-gray-3);
+  padding-top: 12px;
+  margin-top: 16px;
+}
+
+/* optional */
+.badge {
+  margin-bottom: 6px;
+}

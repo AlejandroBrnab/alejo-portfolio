@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Text, Group, ActionIcon } from '@mantine/core';
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import classes from './Footer.module.css'; // CSS module for styling
+import { IconBrandYoutube, IconBrandLinkedin } from '@tabler/icons-react';
+import classes from './Footer.module.css';
 
 const Footer: React.FC = () => (
   <div className={classes.footer}>
@@ -13,14 +13,11 @@ const Footer: React.FC = () => (
 
       {/* Right side: social icons */}
       <Group gap="sm" className={classes.links} justify="flex-end" align="center" wrap="nowrap">
-        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://twitter.com" target="_blank">
-          <IconBrandTwitter size={20} stroke={1.5} />
-        </ActionIcon>
         <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://youtube.com" target="_blank">
           <IconBrandYoutube size={20} stroke={1.5} />
         </ActionIcon>
-        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://instagram.com" target="_blank">
-          <IconBrandInstagram size={20} stroke={1.5} />
+        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://linkedin.com" target="_blank">
+          <IconBrandLinkedin size={20} stroke={1.5} />
         </ActionIcon>
       </Group>
     </Container>

@@ -7,7 +7,6 @@ import classes from './Header.module.css';
 const links = [
   { link: '#home', label: 'Home' },
   { link: '#projects', label: 'Projects' },
-  { link: '#contact', label: 'Contact' },
 ];
 
 const Header: React.FC = () => {

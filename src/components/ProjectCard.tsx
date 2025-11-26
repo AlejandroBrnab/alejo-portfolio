@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ActionIcon,
-  Avatar,
   Badge,
+  Button,
   Card,
   Group,
   Image,
   Text,
+  Modal,
 } from '@mantine/core';
-import { IconBookmark, IconHeart, IconShare } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandYoutube } from '@tabler/icons-react';
 import classes from './ProjectCard.module.css';
 
 interface Project {
@@ -16,84 +17,96 @@ interface Project {
   title: string;
   description: string;
   image: string;
-  link: string;
   tech: string[];
-  likes?: number;
+  github?: string;
+  youtube?: string; 
+  details?: string;
 }
+
 interface ProjectCardProps {
   project: Project;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <Card withBorder padding="lg" radius="md" className={classes.card}>
-    {/* IMAGE */}
-    <Card.Section mb="sm">
-      <Image
-        src={project.image}
-        alt={project.title}
-        height={180}
-      />
-    </Card.Section>
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const [opened, setOpened] = useState(false);
 
-    {/* FIRST TAG */}
-    {project.tech && project.tech.length > 0 && (
-      <Badge variant="light">{project.tech[0]}</Badge>
-    )}
+  return (
+    <>
+      <Card withBorder radius="md" p="md" className={classes.card}>
+        
+        {/* IMAGE */}
+        <Card.Section>
+          <Image src={project.image} alt={project.title} height={180} />
+        </Card.Section>
 
-    {/* TITLE */}
-    <Text className={classes.title} mt="sm">
-      {project.title}
-    </Text>
+        {/* TITLE + DESCRIPTION */}
+        <Card.Section className={classes.section} mt="md">
+          <Group justify="space-between">
+            <Text fz="lg" fw={500}>
+              {project.title}
+            </Text>
+          </Group>
 
-    {/* DESCRIPTION */}
-    <Text size="sm" mt="xs" c="dimmed">
-      {project.description}
-    </Text>
+          <Text fz="sm" mt="xs" c="dimmed">
+            {project.description}
+          </Text>
+        </Card.Section>
 
-    {/* AUTHOR */}
-    <Group mt="lg">
-      <Avatar
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-7.png"
-        radius="sm"
-      />
-      <div>
-        <Text fw={500}>Alejandro Rodriguez</Text>
-        <Text fz="xs" c="dimmed">
-          Portfolio Project
-        </Text>
-      </div>
-    </Group>
+        {/* TECH TAGS */}
+        <Card.Section className={classes.section}>
+          <Text mt="md" fz="sm" c="dimmed" fw={500}>
+            Technologies used
+          </Text>
 
-    {/* FOOTER */}
-    <Card.Section className={classes.footer} mt="md">
-      <Group justify="space-between">
-        <Text fz="xs" c="dimmed">
-          {project.likes ?? 0} people liked this
-        </Text>
+          <Group gap={7} mt={5}>
+            {project.tech.map((t) => (
+              <Badge key={t} variant="light">
+                {t}
+              </Badge>
+            ))}
+          </Group>
+        </Card.Section>
 
-        <Group gap={0}>
-          <ActionIcon variant="subtle" color="gray">
-            <IconHeart size={20} color="var(--mantine-color-red-6)" stroke={1.5} />
-          </ActionIcon>
-
-          <ActionIcon variant="subtle" color="gray">
-            <IconBookmark size={20} color="var(--mantine-color-yellow-6)" stroke={1.5} />
-          </ActionIcon>
-
-          {/* SHARE BUTTON GOES TO PROJECT LINK */}
-          <ActionIcon
-            variant="subtle"
-            color="gray"
-            component="a"
-            href={project.link}
-            target="_blank"
+        {/* FOOTER BUTTONS */}
+        <Group mt="xs">
+          {/* View More Details */}
+          <Button
+            radius="md"
+            style={{ flex: 1 }}
+            onClick={() => setOpened(true)}
           >
-            <IconShare size={20} color="var(--mantine-color-blue-6)" stroke={1.5} />
+            View More Details
+          </Button>
+
+          {/* GitHub */}
+          <ActionIcon variant="default" radius="md" size={36} component="a" href={project.github} target="_blank" >
+            <IconBrandGithub stroke={1.5} />
           </ActionIcon>
+
+          {/* YouTube */}
+          <ActionIcon
+          variant="default"
+          radius="md"
+          size={36}
+          component="a"
+          href={project.youtube}
+          target="_blank" >
+          <IconBrandYoutube stroke={1.5} />
+        </ActionIcon>
         </Group>
-      </Group>
-    </Card.Section>
-  </Card>
-);
+      </Card>
+
+      {/* MODAL FOR DETAILS */}
+      <Modal
+        opened={opened}
+        onClose={() => setOpened(false)}
+        title={project.title}
+        size="lg"
+      >
+        <Text>{project.details || 'No additional details provided.'}</Text>
+      </Modal>
+    </>
+  );
+};
 
 export default ProjectCard;

@@ -1,38 +1,32 @@
-import React from 'react';
-import { Container, Title, Center, SimpleGrid } from '@mantine/core';
-import ProjectCard from './ProjectCard';
-import projectsData from '../data/projects.json';
+import { Container, Title, SimpleGrid, Center } from "@mantine/core";
+import ProjectCard from "./ProjectCard";
+import projectsData from "../data/projects.json";
 
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-  tech: string[];
-  likes?: number;
+const projects = projectsData;
+
+const categories = Array.from(new Set(projects.map(p => p.category || "Uncategorized")));
+
+export function ProjectsSection() {
+  return (
+    <Container size="lg" id="projects">
+      <Center>
+        <Title mb={32}>Projects</Title>
+      </Center>
+      {categories.map((category) => {
+        const filtered = projects.filter((p) => p.category === category);
+
+        return (
+          <div key={category} style={{ marginBottom: "3rem" }}>
+            <Title order={2} mb="md">{category}</Title>
+
+            <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="lg">
+              {filtered.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </SimpleGrid>
+          </div>
+        );
+      })}
+    </Container>
+  );
 }
-
-const projects: Project[] = projectsData as Project[];
-
-const ProjectsSection: React.FC = () => (
-  <Container id="projects" py="xl">
-    <Center>
-      <Title mb={32}>Projects</Title>
-    </Center>
-
-    <SimpleGrid
-      cols={3}
-      spacing={24}
-      style={{
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-      }}
-    >
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </SimpleGrid>
-  </Container>
-);
-
-export default ProjectsSection;

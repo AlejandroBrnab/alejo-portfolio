@@ -60,7 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
           <Group gap={7} mt={5}>
             {project.tech.map((t) => (
-              <Badge key={t} variant="light">
+              <Badge key={t} variant="light" color="teal">
                 {t}
               </Badge>
             ))}
@@ -74,6 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             radius="md"
             style={{ flex: 1 }}
             onClick={() => setOpened(true)}
+            color="teal"
           >
             View More Details
           </Button>

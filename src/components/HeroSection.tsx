@@ -9,7 +9,12 @@ const HeroSection: React.FC = () => {
       <Container size={700} className={classes.inner}>
         <Title className={classes.title}>
           Hello, I'm{' '}
-          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+          <Text
+            component="span"
+            variant="gradient"
+            gradient={{ from: 'teal.7', to: 'teal.9' }} // darker green gradient
+            inherit
+          >
             Alejandro Rodriguez
           </Text>
         </Title>
@@ -23,7 +28,7 @@ const HeroSection: React.FC = () => {
             size="xl"
             className={classes.control}
             variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan' }}
+            gradient={{ from: 'teal.7', to: 'teal.9' }} // darker gradient for button
             component="a"
             href="#projects"
           >

@@ -1,42 +1,19 @@
-.card {
-  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
-  overflow: hidden;
-}
-
-/* Matches the Mantine BadgeCard layout */
+/* layout/spacing only */
 .section {
-  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   padding-bottom: var(--mantine-spacing-md);
+  border-bottom: 1px solid #0a5f4e; /* optional if you want it in CSS */
 }
 
-/* Last section should not have a border */
 .section:last-of-type {
   border-bottom: 0;
 }
 
-/* HEART ICON */
-.like {
-  color: var(--mantine-color-red-6);
-  width: 20px;
-  height: 20px;
-}
-
-/* SMALL LABEL ABOVE THE TECH TAGS */
-.label {
-  text-transform: uppercase;
-  font-size: var(--mantine-font-size-xs);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-/* Optional: better spacing for tech badges */
 .techGroup {
   margin-top: var(--mantine-spacing-xs);
 }
 
-/* Optional: slightly rounded sections like the example cards */
 .cardSection {
   border-radius: var(--mantine-radius-md);
 }

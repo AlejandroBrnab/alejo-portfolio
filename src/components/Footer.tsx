@@ -9,12 +9,12 @@ const Footer: React.FC = () => (
 
       {/* copyright */}
       <Text fz="sm" c="dimmed" ta="center">
-        &copy; {new Date().getFullYear()} Alejandro Bernabe Rodriguez.
+        &copy; {new Date().getFullYear()} Alejandro Bernabé Rodríguez.
       </Text>
 
       {/* Right side: social icons */}
       <Group gap="sm" className={classes.links} justify="flex-end" align="center" wrap="nowrap">
-        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://github.com" target="_blank">
+        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://github.com/AlejandroBrnab" target="_blank">
           <IconBrandGithub size={20} stroke={1.5} />
         </ActionIcon>
         <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://linkedin.com" target="_blank">

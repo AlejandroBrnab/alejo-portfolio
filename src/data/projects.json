@@ -6,8 +6,7 @@
     "image": "/assets/project1.png",
     "tech": ["React", "TypeScript", "Mantine"],
     "category": "Web",
-    "github": "#",
-    "youtube": "#"
+    "github": "#"
   },
   {
     "id": "2",
@@ -17,7 +16,8 @@
     "tech": ["Godot", "GDScript"],
     "category": "Game Design",
     "github": "#",
-    "youtube": "#"
+    "youtube": "https://youtu.be/IjeCoLRFxao",
+    "videoId": "IjeCoLRFxao"
   },
   {
     "id": "3",
@@ -27,7 +27,8 @@
     "tech": ["PHP", "XAMPP", "MySQL"],
     "category": "Web",
     "github": "#",
-    "youtube": "#"
+    "youtube": "https://youtu.be/wfLDauR-2GI",
+    "videoId": "wfLDauR-2GI"
   },
   {
     "id": "4",
@@ -36,7 +37,7 @@
     "image": "/assets/project4.png",
     "tech": ["Java", "Springboot", "MongoDB", "Auth0", "React", "TypeScript", "Mantine"],
     "category": "Web",
-    "github": "#",
+    "github": "https://github.com/viktorkuts/liondance",
     "youtube": "#"
   },
   {
@@ -46,8 +47,9 @@
     "image": "/assets/project5.png",
     "tech": ["Python", "Raspberry Pi", "HTML", "CSS"],
     "category": "Electronics",
-    "github": "#",
-    "youtube": "#"
+    "github": "https://github.com/NotZagreus/PlantQ",
+    "youtube": "https://www.youtube.com/watch?v=Cs_xcP-y0g8",
+    "videoId": "Cs_xcP-y0g8"
   },
   {
     "id": "6",
@@ -57,7 +59,8 @@
     "tech": ["C#", "Azure"],
     "category": "Web",
     "github": "#",
-    "youtube": "#"
+    "youtube": "https://youtu.be/GRlbEJpVe-4",
+    "videoId": "GRlbEJpVe-4"
   },
   {
     "id": "7",
@@ -66,8 +69,7 @@
     "image": "/assets/project7.png",
     "tech": ["React", "Tailwind"],
     "category": "Web",
-    "github": "#",
-    "youtube": "#"
+    "github": "https://github.com/cgerard321/champlain_petclinic"
   },
   {
     "id": "8",
@@ -76,8 +78,8 @@
     "image": "/assets/project8.png",
     "tech": ["Blender"],
     "category": "3D",
-    "github": "#",
-    "youtube": "#"
+    "youtube": "https://youtu.be/Fm2bN054NFw",
+    "videoId": "Fm2bN054NFw"
   },
   {
     "id": "9",
@@ -86,8 +88,8 @@
     "image": "/assets/project9.png",
     "tech": ["Blender"],
     "category": "3D",
-    "github": "#",
-    "youtube": "#"
+    "youtube": "https://youtu.be/OPAttW-ypPM",
+    "videoId": "OPAttW-ypPM"
   },
   {
     "id": "10",
@@ -96,7 +98,7 @@
     "image": "/assets/project10.png",
     "tech": ["Blender"],
     "category": "3D",
-    "github": "#",
-    "youtube": "#"
+    "youtube": "https://youtu.be/TfjFLwErJX4",
+    "videoId": "TfjFLwErJX4"
   }
 ]

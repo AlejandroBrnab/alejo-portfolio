@@ -3,7 +3,7 @@
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   padding-bottom: var(--mantine-spacing-md);
-  border-bottom: 1px solid #0a5f4e; /* optional if you want it in CSS */
+  border-bottom: 1px solid #0a5f4e;
 }
 
 .section:last-of-type {
@@ -16,4 +16,8 @@
 
 .cardSection {
   border-radius: var(--mantine-radius-md);
+}
+
+.mediaSection {
+  padding: 0.5rem;
 }

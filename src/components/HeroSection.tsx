@@ -15,12 +15,12 @@ const HeroSection: React.FC = () => {
             gradient={{ from: 'teal.7', to: 'teal.9' }} // darker green gradient
             inherit
           >
-            Alejandro Rodriguez
+            Alejandro Bernabé Rodríguez
           </Text>
         </Title>
 
         <Text className={classes.description} c="dimmed" size="lg">
-          Frontend Developer | React + TypeScript | Portfolio
+          Portfolio
         </Text>
 
         <Group className={classes.controls} mt="xl">
@@ -37,11 +37,12 @@ const HeroSection: React.FC = () => {
 
           <Button
             component="a"
-            href="https://github.com/your-github-username"
+            href="https://github.com/AlejandroBrnab"
             size="xl"
             variant="default"
             className={classes.control}
             leftSection={<IconBrandGithub size={20} />}
+            target="_blank"
           >
             GitHub
           </Button>

@@ -21,6 +21,7 @@ interface Project {
   github?: string;
   youtube?: string; 
   details?: string;
+  videoId?: string;
 }
 
 interface ProjectCardProps {
@@ -35,8 +36,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <Card withBorder radius="md" p="md" className={classes.card}>
         
         {/* IMAGE */}
-        <Card.Section>
-          <Image src={project.image} alt={project.title} height={180} />
+        <Card.Section className={classes.mediaSection}>
+          {project.videoId ? (
+            <iframe
+              width="100%"
+              height="200"
+              src={`https://www.youtube.com/embed/${project.videoId}`}
+              title={project.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ border: '0', borderRadius: '8px' }}
+            />
+          ) : (
+            <Image src={project.image} alt={project.title} height={180} />
+          )}
         </Card.Section>
 
         {/* TITLE + DESCRIPTION */}
@@ -80,20 +93,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </Button>
 
           {/* GitHub */}
-          <ActionIcon variant="default" radius="md" size={36} component="a" href={project.github} target="_blank" >
-            <IconBrandGithub stroke={1.5} />
-          </ActionIcon>
+          {project.github && (
+            <ActionIcon
+              variant="default"
+              radius="md"
+              size={36}
+              component="a"
+              href={project.github}
+              target="_blank"
+            >
+              <IconBrandGithub stroke={1.5} />
+            </ActionIcon>
+          )}
 
           {/* YouTube */}
-          <ActionIcon
-          variant="default"
-          radius="md"
-          size={36}
-          component="a"
-          href={project.youtube}
-          target="_blank" >
-          <IconBrandYoutube stroke={1.5} />
-        </ActionIcon>
+          {project.youtube && (
+            <ActionIcon
+              variant="default"
+              radius="md"
+              size={36}
+              component="a"
+              href={project.youtube}
+              target="_blank"
+            >
+              <IconBrandYoutube stroke={1.5} />
+            </ActionIcon>
+          )}
         </Group>
       </Card>
 

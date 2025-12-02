@@ -35,32 +35,44 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <>
       <Card withBorder radius="md" p="md" className={classes.card}>
         
-        {/* IMAGE */}
+        {/* IMAGE + VIDEO */}
         <Card.Section className={classes.mediaSection}>
-          {project.videoId ? (
-            <iframe
-              width="100%"
-              height="200"
-              src={`https://www.youtube.com/embed/${project.videoId}`}
-              title={project.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ border: '0', borderRadius: '8px' }}
-            />
-          ) : (
-            <Image src={project.image} alt={project.title} height={180} />
-          )}
+            <div className={classes.mediaWrapper}>
+              {project.videoId ? (
+                <iframe
+                  src={`https://www.youtube.com/embed/${project.videoId}`}
+                  title={project.title}
+                  className={classes.media}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              ) : (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className={classes.media}
+                />
+              )}
+          </div>
         </Card.Section>
 
         {/* TITLE + DESCRIPTION */}
-        <Card.Section className={classes.section} mt="md">
+        <Card.Section
+          className={`${classes.section} ${classes.descriptionSection}`}
+          mt="md"
+        >
           <Group justify="space-between">
             <Text fz="lg" fw={500}>
               {project.title}
             </Text>
           </Group>
 
-          <Text fz="sm" mt="xs" c="dimmed">
+          <Text
+            fz="sm"
+            mt="xs"
+            c="dimmed"
+            className={classes.description}
+          >
             {project.description}
           </Text>
         </Card.Section>

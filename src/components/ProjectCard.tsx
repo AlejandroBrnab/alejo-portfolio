@@ -129,7 +129,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         title={project.title}
         size="lg"
       >
-        <Text>{project.details || 'No additional details provided.'}</Text>
+        <div style={{ maxHeight: '70vh', overflowY: 'auto' }}>
+          {project.details ? (
+            <>
+              <Text fw={600} mb="xs">Process & Intention</Text>
+              <Text style={{ whiteSpace: 'pre-wrap' }}>{project.details}</Text>
+            </>
+          ) : (
+            <Text>No additional details provided.</Text>
+          )}
+        </div>
       </Modal>
     </>
   );

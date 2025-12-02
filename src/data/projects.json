@@ -11,13 +11,14 @@
   {
     "id": "2",
     "title": "Math Game Prototype",
-    "description": "A small 2D game built in Godot as a design experiment.",
+    "description": "A small 2D game prototype built in Godot as a design experiment.",
     "image": "/assets/project2.png",
     "tech": ["Godot", "GDScript"],
     "category": "Game Design",
     "github": "#",
     "youtube": "https://youtu.be/IjeCoLRFxao",
-    "videoId": "IjeCoLRFxao"
+    "videoId": "IjeCoLRFxao",
+    "details": "I created this 2D math game prototype in Godot during breaks in my internship as a way of expanding my knowledge in game design. It was inspired by my younger sister, who was beginning to learn basic math (addition and subtraction). The idea of the game is that the player goes to find an NPC who asks simple math questions, and the player must collect the correct number of coins to answer the NPC’s question.\n\nThe prototype is unpolished. Some early game bugs I encountered are the small hitbox of the block that spawns coins (making it a bit difficult to hit) and the unlimited coins spawned after each block hit.\n\nHowever, I enjoyed creating this prototype. I learned how to use a new game engine and how to make the player interact with the environment (in this case, an NPC). The project also reinforced my programming knowledge within a video game context. I can see this type of media leading me towards creating more interactive experiences for end users. When my younger sister had the chance to try out the game, she was more concerned about the NPC being a monster slime rather than the game bugs I had mentioned earlier."
   },
   {
     "id": "3",

@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
           Portfolio
         </Text>
 
-        <Group className={classes.controls} mt="xl">
+        <Group className={classes.controls} mt="xl" justify="center" gap={25}>
           <Button
             size="xl"
             className={classes.control}

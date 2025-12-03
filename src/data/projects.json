@@ -3,10 +3,11 @@
     "id": "1",
     "title": "Portfolio Website",
     "description": "A static portfolio showcasing my projects and skills.",
-    "image": "/assets/project1.png",
+    "image": "/assets/mono.png",
     "tech": ["React", "TypeScript", "Mantine"],
     "category": "Web",
-    "github": "#"
+    "github": "#",
+    "details": "Slow down on Monday"
   },
   {
     "id": "2",
@@ -18,7 +19,7 @@
     "github": "#",
     "youtube": "https://youtu.be/IjeCoLRFxao",
     "videoId": "IjeCoLRFxao",
-    "details": "I created this 2D math game prototype in Godot during breaks in my internship as a way of expanding my knowledge in game design. It was inspired by my younger sister, who was beginning to learn basic math (addition and subtraction). The idea of the game is that the player goes to find an NPC who asks simple math questions, and the player must collect the correct number of coins to answer the NPC’s question.\n\nThe prototype is unpolished. Some early game bugs I encountered are the small hitbox of the block that spawns coins (making it a bit difficult to hit) and the unlimited coins spawned after each block hit.\n\nHowever, I enjoyed creating this prototype. I learned how to use a new game engine and how to make the player interact with the environment (in this case, an NPC). The project also reinforced my programming knowledge within a video game context. I can see this type of media leading me towards creating more interactive experiences for end users. When my younger sister had the chance to try out the game, she was more concerned about the NPC being a monster slime rather than the game bugs I had mentioned earlier."
+    "details": "Not a sound on Wednesday (yeah)"
   },
   {
     "id": "3",
@@ -29,17 +30,20 @@
     "category": "Web",
     "github": "#",
     "youtube": "https://youtu.be/wfLDauR-2GI",
-    "videoId": "wfLDauR-2GI"
+    "videoId": "wfLDauR-2GI",
+    "details": "Might get loud (ayy) on Friday"
   },
   {
     "id": "4",
     "title": "Liondance",
     "description": "A 3-tier web application designed and implemented for a martial arts school.",
     "image": "/assets/project4.png",
-    "tech": ["Java", "Springboot", "MongoDB", "Auth0", "React", "TypeScript", "Mantine"],
+    "tech": ["Java", "Springboot", "MongoDB", "Auth0", "React", "TypeScript", "Mantine", "Docker"],
     "category": "Web",
     "github": "https://github.com/viktorkuts/liondance",
-    "youtube": "#"
+    "youtube": "https://youtu.be/LO6DWk5jOeQ",
+    "videoId": "LO6DWk5jOeQ",
+    "details": "But on Saturday. Saturday, Saturday"
   },
   {
     "id": "5",
@@ -50,7 +54,8 @@
     "category": "Electronics",
     "github": "https://github.com/NotZagreus/PlantQ",
     "youtube": "https://www.youtube.com/watch?v=Cs_xcP-y0g8",
-    "videoId": "Cs_xcP-y0g8"
+    "videoId": "Cs_xcP-y0g8",
+    "details": "We paint the town"
   },
   {
     "id": "6",
@@ -61,7 +66,8 @@
     "category": "Web",
     "github": "#",
     "youtube": "https://youtu.be/GRlbEJpVe-4",
-    "videoId": "GRlbEJpVe-4"
+    "videoId": "GRlbEJpVe-4",
+    "details": "Lose my sense a time or two"
   },
   {
     "id": "7",
@@ -72,7 +78,8 @@
     "category": "Programming",
     "github": "https://github.com/AlejandroBrnab/Final-Project-Task-Manager",
     "youtube": "https://youtu.be/5LqWhZ5btz4",
-    "videoId": "5LqWhZ5btz4"
+    "videoId": "5LqWhZ5btz4",
+    "details": "Weeks feel like days"
   },
   {
     "id": "8",
@@ -82,7 +89,8 @@
     "tech": ["Blender"],
     "category": "3D",
     "youtube": "https://youtu.be/Fm2bN054NFw",
-    "videoId": "Fm2bN054NFw"
+    "videoId": "Fm2bN054NFw",
+    "details": "Medicate in the afternoon"
   },
   {
     "id": "9",
@@ -92,7 +100,8 @@
     "tech": ["Blender"],
     "category": "3D",
     "youtube": "https://youtu.be/OPAttW-ypPM",
-    "videoId": "OPAttW-ypPM"
+    "videoId": "OPAttW-ypPM",
+    "details": "And I just want to know"
   },
   {
     "id": "10",
@@ -102,6 +111,7 @@
     "tech": ["Blender"],
     "category": "3D",
     "youtube": "https://youtu.be/TfjFLwErJX4",
-    "videoId": "TfjFLwErJX4"
+    "videoId": "TfjFLwErJX4",
+    "details": "Have you lost your footing too?"
   }
 ]

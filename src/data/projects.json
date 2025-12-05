@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Portfolio Website",
     "description": "A static portfolio showcasing my projects and skills.",
-    "image": "/assets/mono.png",
+    "image": "assets/mono.png",
     "tech": ["React", "TypeScript", "Mantine"],
     "category": "Web",
     "github": "https://github.com/AlejandroBrnab/alejo-portfolio",

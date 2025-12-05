@@ -48,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 />
               ) : (
                 <Image
-                  src={project.image}
+                  src={`/alejo-portfolio/${project.image}`}
                   alt={project.title}
                   className={classes.media}
                 />

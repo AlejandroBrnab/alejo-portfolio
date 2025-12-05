@@ -6,7 +6,7 @@
     "image": "/assets/mono.png",
     "tech": ["React", "TypeScript", "Mantine"],
     "category": "Web",
-    "github": "#",
+    "github": "https://github.com/AlejandroBrnab/alejo-portfolio",
     "details": "Slow down on Monday"
   },
   {
@@ -16,7 +16,7 @@
     "image": "/assets/project2.png",
     "tech": ["Godot", "GDScript"],
     "category": "Game Design",
-    "github": "#",
+    "github": "https://github.com/AlejandroBrnab/MathGamePrototype",
     "youtube": "https://youtu.be/IjeCoLRFxao",
     "videoId": "IjeCoLRFxao",
     "details": "Not a sound on Wednesday (yeah)"
@@ -28,7 +28,7 @@
     "image": "/assets/project3.png",
     "tech": ["PHP", "XAMPP", "MySQL", "phpMyAdmin"],
     "category": "Web",
-    "github": "#",
+    "github": "https://github.com/AlejandroBrnab/HotelRoomsCRUD",
     "youtube": "https://youtu.be/wfLDauR-2GI",
     "videoId": "wfLDauR-2GI",
     "details": "Might get loud (ayy) on Friday"
@@ -64,7 +64,7 @@
     "image": "/assets/project6.png",
     "tech": ["C#", "Azure", "POSTMAN"],
     "category": "Web",
-    "github": "#",
+    "github": "https://github.com/AlejandroBrnab/VirtualArtsExhibition",
     "youtube": "https://youtu.be/GRlbEJpVe-4",
     "videoId": "GRlbEJpVe-4",
     "details": "Lose my sense a time or two"

@@ -38,7 +38,7 @@
     "title": "Liondance",
     "description": "A 3-tier web application designed and implemented for a martial arts school.",
     "image": "/assets/project4.png",
-    "tech": ["Java", "Springboot", "MongoDB", "Auth0", "React", "TypeScript", "Mantine", "Docker"],
+    "tech": ["Java", "Springboot", "MongoDB", "Auth0", "React", "TypeScript", "Mantine", "Docker", "Figma"],
     "category": "Web",
     "github": "https://github.com/viktorkuts/liondance",
     "youtube": "https://youtu.be/LO6DWk5jOeQ",

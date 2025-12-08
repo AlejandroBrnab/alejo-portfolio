@@ -2,12 +2,12 @@
   {
     "id": "1",
     "title": "Portfolio Website",
-    "description": "A static portfolio showcasing my projects and skills.",
+    "description": "A static portfolio that shows my background, projects, and skills.",
     "image": "assets/mono.png",
     "tech": ["React", "TypeScript", "Mantine"],
     "category": "Web",
     "github": "https://github.com/AlejandroBrnab/alejo-portfolio",
-    "details": "Slow down on Monday"
+    "details": "I created this portfolio website to support my university application, while having a more dynamic and organized way to showcase the different projects I have worked on during my journey in Computer Science.\n\nDuring one of my courses in the last semester, I worked on a portfolio that included a database, backend, and frontend. But I didn't really like the old portfolio because I had to rush the process and the final design did not reflect what I really wanted. But I like a lot the new portfolio's design, it's simple and clean, not overly flashy, but still visually appealing and easy to navigate.\n\nBuilding this portfolio has helped me strengthen my front-end development skills and gain experience working with React, TypeScript, and Mantine for UI design.\n\nOverall, this project serves as both a personal archive of my projects and a platform to present my interests in technology, design, and interactive media."
   },
   {
     "id": "2",
@@ -19,7 +19,7 @@
     "github": "https://github.com/AlejandroBrnab/MathGamePrototype",
     "youtube": "https://youtu.be/IjeCoLRFxao",
     "videoId": "IjeCoLRFxao",
-    "details": "Not a sound on Wednesday (yeah)"
+    "details": "I created this 2D math game prototype in Godot during breaks in my internship as a way of expanding my knowledge in game design. It was inspired by my younger sister, who was beginning to learn basic math (addition and subtraction). The idea of the game is that the player goes to find an NPC who asks simple math questions, and the player must collect the correct number of coins to answer the NPC’s questions.\n\nAs shown nearly at the end of the video, the prototype is unpolished. There are some game bugs I encountered, such as the small hitbox of the block that spawns coins (making it a bit difficult to hit) and the unlimited coins spawned after each block hit.\n\nHowever, I enjoyed creating this prototype. I learned how to use a new game engine and how to make the player interact with the environment (in this case, an NPC). The project also reinforced my programming knowledge within a video game context. This type of media can lead me towards creating more interactive experiences for end users. By the way, my younger sister had the chance to try out the prototype, and she was more concerned about the NPC being a monster slime rather than the game bugs I mentioned earlier."
   },
   {
     "id": "3",
@@ -31,7 +31,7 @@
     "github": "https://github.com/AlejandroBrnab/HotelRoomsCRUD",
     "youtube": "https://youtu.be/wfLDauR-2GI",
     "videoId": "wfLDauR-2GI",
-    "details": "Might get loud (ayy) on Friday"
+    "details": "This project was a PHP course assignment and it was developed by worked my friend Artem Kozlov and me. We developed a CRUD application simulating a hotel room management system. The application allows users (admins or other employees) to create room reservations, update room availability, delete room reservations, and display the rooms and their availabilities in a table. The initial room data was stored in a text file and programmatically inserted into a MySQL database using phpMyAdmin with XAMPP.\n\nThis project introduced me to server-side programming with PHP and it reinforced my knowledge of how to handle the integration between a backend database and a front-end interface. Additionally, I also gained more practical experience in building interactive web applications and managing dynamic data.\n\nCredits to Artem for helping me troubleshoot the SQL connection and for contributing to the front-end side of the project. :)"
   },
   {
     "id": "4",
@@ -43,7 +43,7 @@
     "github": "https://github.com/viktorkuts/liondance",
     "youtube": "https://youtu.be/LO6DWk5jOeQ",
     "videoId": "LO6DWk5jOeQ",
-    "details": "But on Saturday. Saturday, Saturday"
+    "details": "The purpose of this project was to create a web application for a non-profit martial arts school to support the management of their classes, students, and public events. The platform allows visitors to register for courses (or register their children), book event performances, view events, and read community reviews. Administrator and staff have full control of the platform, including approving and modifying events, communicating with clients, and managing users within the system.\n\nThis project was developed by a team of five people. We collaborated on research, design, and implementation while dividing responsibilities across frontend, backend, authentication, and database management. We used tools like Figma for planning and wireframing, and Git/GitHub for version control and collaboration. Throughout the project, we regularly discussed ideas, resolved conflicting opinions, and made collective decisions to improve the final version.\n\nWorking on this project strengthened both my technical and collaborative skills. I learned how to use Figma for interface planning, gained a deeper understanding of authentication systems and deployment processes. I also developed better communication and teamwork skills by learning how to manage divided opinions, give and receive feedback, and adapt to different working styles within a group environment. Of course, this project significantly helped improve my UI design skills and reinforced my knowledge in frontend and backend development.\n\nCredits to Artem Kozlov, Viktor Kuts, Sam Prasad and Constantin Tsakiris for have hardly worked and positively engaged on every aspect of this project during a whole semester. :)"
   },
   {
     "id": "5",
@@ -55,7 +55,7 @@
     "github": "https://github.com/NotZagreus/PlantQ",
     "youtube": "https://www.youtube.com/watch?v=Cs_xcP-y0g8",
     "videoId": "Cs_xcP-y0g8",
-    "details": "We paint the town"
+    "details": "PlantQ is a smart plant maintenance system developed to automate plant care by integrating sensors and intelligent controls. The system monitors soil moisture, temperature, humidity, and light levels, and automatically waters plants or adjusts lighting when necessary. I worked on this project in collaboration with my friends Artem Kozlov and Felix Zhang. Together, we combined hardware components (Raspberry Pi, DHT11 sensor, moisture sensor, relay, water pump, LEDs) with Python programming and APIs to create a functional and interactive system.\n\nI gained hands-on experience with embedded systems, learned how to interface physical hardware with software, process real-time sensor data, and learned how useful automation can be in a system. It also reinforced my programming skills in Python and my ability to manage both backend logic and the user interface through a web application. What I learned with this project can lead me towards further explorations in interactive media and IoT applications.\n\nCredits to Artem for helping assemble the hardware, coding the backend and frontend, bringing his plant, editing the video, and providing some components for the project.\n\nCredits to Felix for helping assemble the hardware, assisting with coding the backend and frontend, and providing some components for the project. :D"
   },
   {
     "id": "6",
@@ -67,7 +67,7 @@
     "github": "https://github.com/AlejandroBrnab/VirtualArtsExhibition",
     "youtube": "https://youtu.be/GRlbEJpVe-4",
     "videoId": "GRlbEJpVe-4",
-    "details": "Lose my sense a time or two"
+    "details": "This was a final project for an Azure course and it was developed by my friend Artem Kozlov and me. The project is a virtual art gallery built with C# that follows the MVC model (Model-View-Controller). The project includes a login interface for artists. Users were created via Postman (API platform), as the assignment did not require implementing account creation on the front-end. Once logged in, users can view the home page and navigate to the artwork gallery. Additionally, users can perform full CRUD operations on any entry, including posting new artwork, updating its details, and deleting artwork. We used a local database within Visual Studio to store the artwork details.\n\nThis project taught me how to build cloud-ready applications, structure a web application using MVC (which was surprisingly fast), and manage data with a local database. Moreover, it reinforced my knowledge of C# programming and the practical workflow of connecting front-end and back-end components.\n\nCredits to Artem for helping with coding the backend and frontend, and for assisting in explaining the project to our professor. :D"
   },
   {
     "id": "7",
@@ -79,7 +79,7 @@
     "github": "https://github.com/AlejandroBrnab/Final-Project-Task-Manager",
     "youtube": "https://youtu.be/5LqWhZ5btz4",
     "videoId": "5LqWhZ5btz4",
-    "details": "Weeks feel like days"
+    "details": "The Task Manager was a final project for an Android development course and it was developed in by my friend Artem Kozlov and me. The application allows users to add tasks to a task list, which are stored locally on the device in a database. The app features a simple and clean design, focusing on usability and functionality.\n\nThrough this project, I gained hands-on experience with Kotlin, Android development in general, and local data storage on mobile devices. Although the design is minimal, the project successfully accomplishes its goal of providing an efficient task management tool.\n\nCredits to Artem for collaborating on development, testing, and design. :)"
   },
   {
     "id": "8",
@@ -90,7 +90,7 @@
     "category": "3D",
     "youtube": "https://youtu.be/Fm2bN054NFw",
     "videoId": "Fm2bN054NFw",
-    "details": "Medicate in the afternoon"
+    "details": "This project was created as a way to learn the fundamentals of 3D modeling and rendering in Blender. I followed Blender Guru's tutorials (Blender 4.0) to understand the basics of modeling, texturing, lighting, and animation. Also, followed Blender Forge's turntable animation. The final result of this project is a simple turntable animation that showcases low-poly donut models from different angles.\n\nI learned how to navigate throughs Blender's interface, work with modifiers, set up basic materials, positioning cameras and lights, and rendering an animated scene. This project helped me better understand the 3D creation workflow from start to finish.\n\nEven though this project uses a low-poly style, it was an important step in my creative and technical growth. It really sparked my interest in 3D modeling and animation and pushed me to keep improving my skills and curiosity in this new area of creativity.\n\nCredits to Blender Guru and Blender Forge for their tutorials on YouTube (I linked in the videos' description the tutorials I used)."
   },
   {
     "id": "9",
@@ -101,7 +101,7 @@
     "category": "3D",
     "youtube": "https://youtu.be/OPAttW-ypPM",
     "videoId": "OPAttW-ypPM",
-    "details": "And I just want to know"
+    "details": "This project was created to put into practice what I learned from Blender Guru's tutorials. I also used other few tutorials from MK Graphics to cut holes in an object and The CG Essentials to make an object blink. The whole idea of the mountain scene was inspired by a Super Smash Bros' stage from Banjo-Kazooie. I modeled and animated characters called Jinjos from Banjo-Kazooie who are walking (in the video they seemed they crawl in order to walk haha). I also made the iconic golden puzzle from the game, and I made them blink to show them as something important in the scene. The Jinjos' animation isn't perfect, but it pushed me to try something completely new without watching a tutorial on how to animate a character. If I'm being honest, I used the little animation skills I learned from the turntable tutorial in order to animate the Jinjos\n\n The main goal of this project was for me to get familiarized more with Blender's tools and interface. While using everything I learned from Blender Guru's tutorials.\n\nThis project motivates me to continue exploring character creation and animation, especially within a video game context or even a short film. I absolutely enjoyed every minute of this project. I can see myself improving my character modelling skills and make better animations in the future.\n\nCredits to Blender Forge, Mk Graphics and The CG Essentials for their tutorials on YouTube (I linked in the videos' description the tutorials I used)."
   },
   {
     "id": "10",
@@ -112,6 +112,6 @@
     "category": "3D",
     "youtube": "https://youtu.be/TfjFLwErJX4",
     "videoId": "TfjFLwErJX4",
-    "details": "Have you lost your footing too?"
+    "details": "In this project, I kind of recreated my bedroom in 3D. I mainly modeled the objects/furniture that usually don't get moved from their place.\n\nThis project allowed me to put into practice everything I had learned about 3D modeling, materials, and scene composition in Blender. I can say that I improved my 3D modeling skills, my way of approaching the creation of an object, and my ability to observe real-life objects (or images) and use them effectively as references. Also, I followed a tutorial from Blender Inferno to model the drawers from the desk and a tutorial from Aaron Van de Weijenberg to model the sides of the PS5.\n\nOverall, this experience helped me strengthen my environmental modeling skills and deepened my understanding of how small details can inlfuence 3D space. The project motivates me to continue exploring environment design and more complex 3D scenes in the future.\n\nCredits to Blender Forge, Aaron Van de Weijenberg and Blender Inferno for their tutorials on YouTube (I linked in the videos' description the tutorials I used)."
   }
 ]

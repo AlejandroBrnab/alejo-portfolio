@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
         <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://github.com/AlejandroBrnab" target="_blank">
           <IconBrandGithub size={20} stroke={1.5} />
         </ActionIcon>
-        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://linkedin.com" target="_blank">
+        <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="https://www.linkedin.com/in/alejandro-bernabé-rodríguez-97984a32a/" target="_blank">
           <IconBrandLinkedin size={20} stroke={1.5} />
         </ActionIcon>
       </Group>

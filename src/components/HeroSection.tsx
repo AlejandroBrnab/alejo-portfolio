@@ -21,9 +21,9 @@ const HeroSection: React.FC = () => {
 
         <Text className={classes.description} c="dimmed" size="lg">
           I graduated from the Computer Science and Technology program at Champlain College Saint-Lambert.<br/><br/>
-          Mostly of my technical skills come from a programming background. Teaching me how to properly make connections between front-end, backend and a database.<br />
-          While I know how to develop a full-stack application, I always found myself to like and work more the front-end  side and user interaction of the application, rather than the backend and database side.<br /><br />
-          I kind of felt interested into a more artistic area instead. One day, while looking for a tech job, I found myself to check a video about Blender. I followed a tutorial and absolutely loved it. I’ve been learning and developing new skills in the 3D field, which is new to me.<br/>
+          Most of my technical skills come from a programming background, where I learned how to work with front-end, back-end, and databases together.<br />
+          While I can build full-stack applications, I always enjoyed working more on the front-end and the user experience than on the back-end or database side.<br /><br />
+          At some point, I started feeling drawn towards something more artistic. One day, while looking for a tech job, I came across a Blender video. I followed a tutorial and immediately loved it. Since then, I’ve been learning and building new skills in 3D, which is a completely new area for me.<br/>
         </Text>
 
         <Group className={classes.controls} mt="xl" justify="center" gap={25}>
